@@ -1,0 +1,134 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #3700b3;
+}
+
+nav a.active {
+  background-color: #3700b3; 
+}
+
+nav a:active {
+  background-color: #3700b3; 
+}
+
+nav a.logout {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+nav a.logout:hover {
+  background-color: #b71c1c;
+}
+
+nav a.logout:active {
+  background-color: #f44336;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: calc(100vh - 60px); 
+  padding: 20px;
+  margin-top: 20px; 
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header-title {
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: white;
+}
+
+.username {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: white;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.wise-token-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+}
